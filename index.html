@@ -5,26 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><h2><a href="https://github.com/EllisJLC" target="_blank">Github</a></h2></li>
-            <li><h2>Portfolio</h2></li>
-            <li><h2 id="last-nav">Contact</h2></li>
+    <header>
+        <ul id="headers">
+            <img src="./assets/images/name-panel.png" id="name">
+            <li><h2><a href="#about-me">About me</a></h2></li>
+            <li><h2><a href="#projects">Projects</a></h2></li>
+            <li><h2 id="last-nav"><a href="#contact">Contact</a></h2></li>
         </ul>
-    </nav>
-
-    <h1 id="first-header">My website</h1>
-
+    </header>
+    <a href="https://github.com/EllisJLC" target="_blank"><img src="./assets/images/github-panel.png" id="github-link" alt="github panel"></a>
     <figure>
-        <img src="./assets/image.jpg" alt="Image of JavaScript code on screen">
-        <figcaption>Let's make this reality</figcaption>
+        <img src="./assets/images/LinesofCode.png" alt="Image of JavaScript code on screen" id="code-image">
+        <figcaption>The Wonders of JavaScript!</figcaption>
     </figure>
 
-    <h2 class="aboutme">About Me</h2>
-    <p class="aboutme">Text goes here</p>
+    <h2 class="general-text" id="about-me">About Me</h2>
+    <p class="general-text">
+        My name is Jia Liang (Ellison) Chen! With a background in Medical Physics and some teaching, I decided to 
+        look into the possibility of web development! I am currently enrolled in the UofT SCS Bootcamp for Web development
+        and am working on numerous projects to expand my understanding of HTML, CSS, and JavaScript (MERN Stack).
+    </p>
+
+    <h2 class="general-text" id="projects">Projects</h2>
+
+
+
+    <h2 class="general-text" id="contact">Contact Me!</h2>
+
+    <ul id="contacts">
+        <li>Email: jia.liang.chen@ryerson.ca</li>
+        <li>Phone: 437-833-9592</li>
+    </ul>
+
     <footer><p>Made in HTML and CSS by Jia Liang Chen</p></footer>
 </body>
 </html>

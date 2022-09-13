@@ -1,0 +1,104 @@
+/* General asthetics */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #ABD1C9FF;
+}
+
+/* Variables */
+:root {
+    --header-colour: black;
+    --header-background: #DFDCE5FF;
+}
+
+/* Fixed position elements */
+header {
+    display: block;
+    flex: 1 0 60px;
+    color: var(--header-background);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#github-link {
+    float: left;
+    position:fixed;
+    height: 50px;
+    width: auto;
+    padding-top: 5px;
+    margin-top: 60px;
+    opacity: 0.2;
+}
+
+/* Body styling */
+footer {
+    background-color: var(--header-background);
+    display: block;
+    color: var(--header-colour);   
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header li {
+    display: inline-block;
+    padding-left: 38px;
+    font-size: 24px;
+    color:inherit;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#name {
+    display: inline;
+    float: left;
+    height: 50px;
+    width: auto;
+    padding-top: 5px;
+}
+
+#github-link:hover {
+    opacity:0.6;
+}
+
+header ul li #last-nav {
+    padding-right: 15px;
+}
+ 
+#headers {
+    position: relative;
+    text-align: right;
+}
+
+#contacts {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.general-text {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+}
+
