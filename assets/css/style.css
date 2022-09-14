@@ -254,9 +254,13 @@ footer {
 
 @media screen and (max-width: 414px) {
     #first-project {
-        width: 200px;
+        width: 400;
     }
     header {
         padding-top: 20px;
+    }
+    #github-link {
+        width: 100px;
+        height: auto;
     }
 }
