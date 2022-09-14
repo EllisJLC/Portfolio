@@ -65,8 +65,8 @@ header ul li #last-nav /*last-nav id child from list item, unordered list, and h
 #github-link /*Github link id, for image*/{
     float: left; /*Keep to the left of the window*/
     position:fixed; /*Fix position onto display*/
-    height: 50px; /*Set height of image*/
-    width: auto; /*Set width of image based on height*/
+    width: 12%; /*Set width of image based on width of screen*/
+    height: auto; /*Set height of image based on width of object*/
     padding-top: 5px; /*Add even spacing on top and bottom*/
     margin-top: 60px; /*Move under the header*/
     opacity: 0.3; /*Make translucent*/
@@ -89,7 +89,6 @@ figure /*Figure element selector*/{
 }
 
 #code-image /*code-image id selector for code image at the top of the page*/{
-    width: 100%; /*Cover the whole width*/
     height: 600px; /*Set constant height*/
     object-fit: cover; /*Cut image, prevent resizing*/
 }
@@ -145,6 +144,9 @@ section p {
     height: auto;
     margin: 15px;
     padding: 10px;
+    display: flex;
+    /* position: flex; */
+    justify-content: center;
 }
 
 .card-section {
@@ -158,20 +160,7 @@ section p {
     max-width: 300px;
 }
 
-.image-label {
-    position: relative;
-    width: 80px;
-    font-size: 12px;
-    padding: 2px;
-    background-color: #ABD1C9FF;
-    margin-left: 0;
-    margin-top: -60px;
-    /* display:none; */
-    opacity: 0.7;
-    z-index: -1;
-}
-
-#main-display {
+#main-display /*main display id selector for first project in list*/{
     position: relative;
     width: 60px;
     font-size: 12px;
@@ -179,18 +168,27 @@ section p {
     background-color: #ABD1C9FF;
     margin-left: 30px;
     margin-top: -60px;
-    /* display:none; */
     opacity: 0.7;
     z-index: -1;
 }
 
-section a:hover #main-display {
-    /* display: block; */
+section a:hover #main-display /*main-display id selector changes from hovering effect on section link*/ {
     z-index: 0;
 }
 
-#cards a:hover .image-label {
-    /* display: block; */
+.image-label /*image-label class selector for subsequent projects after first*/{
+    position: relative;
+    width: 80px;
+    font-size: 12px;
+    padding: 2px;
+    background-color: #ABD1C9FF;
+    margin-left: 0;
+    margin-top: -60px;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#cards a:hover .image-label /*main-display id selector changes from hovering effect on section link*/{
     z-index: 0;
 }
 
@@ -217,6 +215,17 @@ footer {
 /*Dynamic aspects*/
 @media screen and (max-width: 820px) {
 
+    .card-section a img{
+        max-width: 60%;
+    }
+
+    #github-link {
+        margin-top: 180px;
+    }
+
+    #first-project {
+        width: 400px;
+    }
     header {
         height: 180px;
     }
@@ -225,7 +234,7 @@ footer {
         padding-top: 20px;
         padding-bottom: 20px;
         text-align:right;
-        align-items: center;
+        align-items: flex-start;
     }
 
     header ul {
@@ -234,5 +243,14 @@ footer {
 
     section {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    #first-project {
+        width: 150px;
+    }
+    header {
+        padding-top: 20px;
     }
 }
