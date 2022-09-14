@@ -78,6 +78,10 @@ header ul li #last-nav /*last-nav id child from list item, unordered list, and h
 
 /* Body styling */
 
+h1 {
+    font-size: 60px;
+}
+
 figure /*Figure element selector*/{
     text-align: center; /*Align text in figcaption element to center*/
     justify-content: center; /*Set all content to justify center*/
@@ -162,8 +166,9 @@ section p {
     background-color: #ABD1C9FF;
     margin-left: 0;
     margin-top: -60px;
-    display:none;
+    /* display:none; */
     opacity: 0.7;
+    z-index: -1;
 }
 
 #main-display {
@@ -174,16 +179,19 @@ section p {
     background-color: #ABD1C9FF;
     margin-left: 30px;
     margin-top: -60px;
-    display:none;
+    /* display:none; */
     opacity: 0.7;
+    z-index: -1;
 }
 
 section a:hover #main-display {
-    display: block;
+    /* display: block; */
+    z-index: 0;
 }
 
 #cards a:hover .image-label {
-    display: block;
+    /* display: block; */
+    z-index: 0;
 }
 
 #contacts {
