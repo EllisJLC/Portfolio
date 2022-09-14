@@ -4,14 +4,14 @@
     line-height: 1.5; /*Set spacing to 1.5x*/
 }
 
-body /*Element selector for body section*/ { 
-    background-image: linear-gradient(#ABD1C9FF,#97B3D0FF); /*Background colour*/
+body {
+    background-color: #97B3D0FF;
 }
 
 /* Variables */
 :root {
     --header-colour: black;
-    --header-background: #DFDCE5FF;
+    --header-background: #DFDCE5FF; 
 }
 
 /* Fixed position elements */
@@ -110,7 +110,7 @@ section /*Section element selector*/ {
     color: rgb(72, 101, 132); /*Sets text to blue, for asthetics*/
 }
 
-#portrait {
+#portrait { 
     height: auto;
     max-width: 300px;
     margin: 15px;
@@ -133,7 +133,7 @@ section p {
     justify-content: center;
     align-items: center;
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 #first-project{
@@ -158,7 +158,7 @@ section p {
     width: 60px;
     font-size: 12px;
     padding: 2px;
-    background-color: aliceblue;
+    background-color: #ABD1C9FF;
     margin-left: 0;
     margin-top: -60px;
     display:none;
@@ -170,7 +170,7 @@ section p {
     width: 60px;
     font-size: 12px;
     padding: 2px;
-    background-color: aliceblue;
+    background-color: #ABD1C9FF;
     margin-left: 30px;
     margin-top: -60px;
     display:none;
