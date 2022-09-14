@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Jia Liang Chen</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
+        <img src="./assets/images/name-panel.png" id="name" alt="Jia Liang Chen nametag">
         <ul id="headers">
-            <img src="./assets/images/name-panel.png" id="name">
-            <li><h2><a href="#about-me">About me</a></h2></li>
-            <li><h2><a href="#projects">Projects</a></h2></li>
-            <li><h2 id="last-nav"><a href="#contact">Contact</a></h2></li>
+            <li><h2><a href="#about-me" class="remove-link-decoration">About</a></h2></li>
+            <li><h2><a href="#projects" class="remove-link-decoration">Projects</a></h2></li>
+            <li><h2 id="last-nav" ><a href="#contact" class="remove-link-decoration">Contact</a></h2></li>
         </ul>
     </header>
     <a href="https://github.com/EllisJLC" target="_blank"><img src="./assets/images/github-panel.png" id="github-link" alt="github panel"></a>
@@ -24,21 +24,48 @@
     </figure>
 
     <h2 class="general-text" id="about-me">About Me</h2>
-    <p class="general-text">
-        My name is Jia Liang (Ellison) Chen! With a background in Medical Physics and some teaching, I decided to 
-        look into the possibility of web development! I am currently enrolled in the UofT SCS Bootcamp for Web development
-        and am working on numerous projects to expand my understanding of HTML, CSS, and JavaScript (MERN Stack).
-    </p>
-
+    <section>
+        <p class="general-text">
+            My name is Jia Liang (Ellison) Chen! With a background in Medical Physics, some teaching, and Twitch streaming, I decided to 
+            look into the possibility of web development! I am currently enrolled in the UofT SCS Bootcamp for Web development
+            and am working on numerous projects to expand my understanding of <a class="blue">HTML, CSS, and JavaScript (MERN Stack)</a >.
+        </p>
+        <img id="portrait" src="./assets/images/Portrait.png">
+    </section>
     <h2 class="general-text" id="projects">Projects</h2>
-
-
+        <section>
+            <a href="https://ellisjlc.github.io/Portfolio/" class="remove-link-decoration">
+                <img src="./assets/images/Portfolio-image.png" id="first-project" alt="Portfolio preview">
+                <p id="main-display">Portfolio</p>
+            </a>
+        </section>
+    <ul id="cards">
+        <section class="card-section">
+            <a href="https://ellisjlc.github.io/Module_1_Challenge/" class="remove-link-decoration">
+                <img src="./assets/images/Horiseon-image.png" alt="Horiseon page preview">
+                <p class="image-label">Horiseon Refactoring</p>
+            </a>
+        </section>
+        <section class="card-section">
+            <a href="https://ellisjlc.github.io/CSS_Guide/" class="remove-link-decoration">
+                <img src="./assets/images/CSS-Cheatsheet.png" alt="CSS Cheatsheet preview">
+                <p class="image-label">CSS Cheatsheet</p>
+            </a>
+        </section>
+        <section class="card-section">
+            <a href="https://ellisjlc.github.io/Portfolio/" class="remove-link-decoration">
+                <img src="./assets/images/Placeholder.png" alt="Portfolio wireframe placeholder">
+                <p class="image-label">Place holder</p>
+            </a>
+        </section>
+    </ul>
 
     <h2 class="general-text" id="contact">Contact Me!</h2>
 
     <ul id="contacts">
         <li>Email: jia.liang.chen@ryerson.ca</li>
         <li>Phone: 437-833-9592</li>
+        <li>Linkedin: <a id="linkedin" class="blue" href="https://www.linkedin.com/in/jia-liang-ellison-chen/">Jia Liang (Ellison) Chen</a></li>
     </ul>
 
     <footer><p>Made in HTML and CSS by Jia Liang Chen</p></footer>
