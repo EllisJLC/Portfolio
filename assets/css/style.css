@@ -111,7 +111,6 @@ section /*Section element selector*/ {
 }
 
 #portrait {
-    width: 300px;
     height: auto;
     max-width: 300px;
     margin: 15px;
@@ -119,7 +118,6 @@ section /*Section element selector*/ {
 }
 
 section p {
-    width: 400px;
     max-width: 400px;
     height: auto;
     margin: 15px;
@@ -134,7 +132,7 @@ section p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -152,7 +150,7 @@ section p {
 }
 
 #cards img {
-    width: 300px;
+    max-width: 300px;
 }
 
 .image-label {
