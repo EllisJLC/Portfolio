@@ -145,6 +145,7 @@ section p {
 
 .card-section {
     max-width: 300px;
+    height: auto;
     margin: 15px;
     padding: 10px;
 }
@@ -155,7 +156,7 @@ section p {
 
 .image-label {
     position: relative;
-    width: 60px;
+    width: 80px;
     font-size: 12px;
     padding: 2px;
     background-color: #ABD1C9FF;
