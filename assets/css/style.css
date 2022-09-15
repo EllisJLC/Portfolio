@@ -90,131 +90,127 @@ figure /*Figure element selector*/{
 
 #code-image /*code-image id selector for code image at the top of the page*/{
     height: 600px; /*Set constant height*/
-    width: 100%;
+    width: 100%; /*Set width to full width*/
     object-fit: cover; /*Cut image, prevent resizing*/
 }
 
 .general-text /*general-text class selector*/ {
     text-align: center; /*Align text in the center*/
-    margin-left: 10%;
+    margin-left: 10%; /*Setting constant margin*/
     margin-right: 10%;
-    padding-top: 10px;
+    padding-top: 10px; /*Spacing for paragraphs and titles*/
 }
 
 section /*Section element selector*/ {
     display: flex; /*Selecting flex */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
+    flex-direction: row; /*Arrange items into a row*/
+    justify-content: center; /*Organize items inside section into the center of the section*/
+    align-items: center; /*Center content on page*/
+    width: 80%; /*set width for section*/
+    margin: 0 auto; /*remove margins*/
 }
 
 .blue /*"blue" class selector*/{
     color: rgb(72, 101, 132); /*Sets text to blue, for asthetics*/
 }
 
-#portrait { 
-    height: auto;
-    max-width: 300px;
-    margin: 15px;
+#portrait /*Portrait id selector for portrait info*/{ 
+    max-width: 300px; /*Set maximum width of portrait*/
+    height: auto; /*Set height of portrait based on width*/
+    margin: 15px; /*Adding spacing around portrait*/
     padding: 10px;
 }
 
-section p {
-    max-width: 400px;
-    height: auto;
-    margin: 15px;
-    padding: 10px;
+section p /*p element selector child of section element parent*/{
+    max-width: 400px; /*Set max width*/
+    height: auto; /*Set height based on width*/
+    margin: 15px; /*Margin spacing*/
+    padding: 10px; /*Padding spacing*/
 }
 
 /*Projects*/
 
-#cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
+#cards /*Cards id selector*/{
+    display: flex; /*Set flexbox display*/
+    flex-direction: row; /*Set orientation of flex*/
+    flex-wrap: wrap; /*Wrap content within flexbox*/
+    justify-content: center; /*Center content*/
+    align-items: center; /*Align items to the center of the page*/
+    width: 60%; /*Set width*/
     margin: 0 auto; 
 }
 
-#first-project{
-    max-width: 600px;
-    height: auto;
-    margin: 15px;
-    padding: 10px;
-    display: flex;
-    /* position: flex; */
-    justify-content: center;
+#first-project /*first-project id selector for first project preview*/{
+    max-width: 600px; /*Set max width of first project preview*/
+    height: auto; /*Set height based on width*/
+    margin: 15px; /*Margin spacing*/
+    padding: 10px; /*Padding spacing*/
 }
 
-.card-section {
-    max-width: 300px;
-    height: auto;
-    margin: 15px;
-    padding: 10px;
+.card-section /*card-section class selector for subsequent project previews*/{
+    max-width: 300px; /*Set max width of subsequent project previews*/
+    height: auto; /*Set height based on width*/
+    margin: 15px; /*Margin spacing*/
+    padding: 10px; /*Padding spacing*/
 }
 
-#cards img {
-    max-width: 300px;
+#cards img /*img element child from cards id*/{
+    max-width: 300px; /*max width of images*/
 }
 
-#main-display /*main display id selector for first project in list*/{
-    position: relative;
-    width: 60px;
+#main-display /*main display id selector for first project in list for label for first project*/{
+    position: relative; /*Set position of displayed label*/
+    width: 60px; /*Spacing and formatting of display label*/
     font-size: 12px;
     padding: 2px;
     background-color: #ABD1C9FF;
-    margin-left: 30px;
-    margin-top: -60px;
-    opacity: 0.7;
-    z-index: -1;
+    margin-left: 30px; /*Positioning*/
+    margin-top: -60px; 
+    opacity: 0.7; /*Reduce opacity*/
+    z-index: -1; /*Send to back*/
 }
 
 section a:hover #main-display /*main-display id selector changes from hovering effect on section link*/ {
-    z-index: 0;
+    z-index: 0; /*Bring to front when hovering*/
 }
 
 .image-label /*image-label class selector for subsequent projects after first*/{
-    position: relative;
-    width: 80px;
+    position: relative; /*Set position of displayed label*/
+    width: 80px; /*Spacing and formatting of display label*/
     font-size: 12px;
     padding: 2px;
     background-color: #ABD1C9FF;
-    margin-left: 0;
+    margin-left: 0; /*Positioning*/
     margin-top: -60px;
-    opacity: 0.7;
-    z-index: -1;
+    opacity: 0.7; /*Reduce opacity*/
+    z-index: -1; /*Send to back*/
 }
 
 #cards a:hover .image-label /*main-display id selector changes from hovering effect on section link*/{
-    z-index: 0;
+    z-index: 0; /*Bring to front when hovering*/
 }
 
-#contacts {
-    text-align: center;
+#contacts /*contacts id selector*/ {
+    text-align: center; /*Center text*/
 }
 
-footer {
-    background-color: var(--header-background);
-    display: block;
-    color: var(--header-colour);   
-    width: 100%;
-    height: 80px;
-    text-align: center;
-    padding-top: 40px;
+footer /*footer element selector*/ {
+    background-color: var(--header-background); /*Set background colour*/
+    color: var(--header-colour); /*Set text colour*/
+    width: 100%; /*Set width of footer for full width*/
+    height: 80px; /*Set height*/
+    text-align: center; /*Align text to center*/
+    padding-top: 40px; /*Margin and Padding spacing*/
     margin-top: 40px;
 }
 
-#linkedin {
-    text-decoration: none;
-    color: inherit;
+#linkedin /*linkedin id selector for linkedin link*/{
+    text-decoration: none; /*Remove link decorations*/
+    color: inherit; /*Inherit colour from rest of text*/
 }
 
 /*Dynamic aspects*/
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) /*Adjust settings upon screen becoming less than 820px*/{
 
     #name {
         width: 124.2px;
@@ -234,6 +230,7 @@ footer {
     }
     header {
         height: 180px;
+        width: 100%;
     }
 
     header ul {
@@ -252,7 +249,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) /*Adjust settings upon screen becoming less than 414px*/ {
     #first-project {
         width: 400;
     }
