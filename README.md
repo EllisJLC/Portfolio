@@ -21,8 +21,11 @@ To display skillset of HTML and CSS as well as ocasional JavaScript through proj
 ![alt text](./assets/images/wireframe-2.png)
 
 - Images of working site:
-![alt text](./assets/images/wireframe-1.png)
-![alt text](./assets/images/wireframe-2.png)
+![alt text](./assets/images/Preview-1.png)
+![alt text](./assets/images/Preview-2.png)
+
+- Images of working site on mobile:
+
 
 ## Installation
 - N/A

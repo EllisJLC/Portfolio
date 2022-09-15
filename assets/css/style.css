@@ -144,7 +144,6 @@ section p /*p element selector child of section element parent*/{
     max-width: 600px; /*Set max width of first project preview*/
     height: auto; /*Set height based on width*/
     margin: 15px; /*Margin spacing*/
-    padding: 10px; /*Padding spacing*/
 }
 
 .card-section /*card-section class selector for subsequent project previews*/{
