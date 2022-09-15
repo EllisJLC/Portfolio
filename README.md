@@ -16,16 +16,18 @@ Portfolio for Jia Liang (Ellison) Chen, used to display projects and general inf
 To display skillset of HTML and CSS as well as ocasional JavaScript through projects linked through this portfolio.
 
 ## Images
-- Images of wireframe plan:
+### Images of wireframe plan:
 ![alt text](./assets/images/wireframe-1.png)
 ![alt text](./assets/images/wireframe-2.png)
 
-- Images of working site:
+### Images of working site:
 ![alt text](./assets/images/Preview-1.png)
 ![alt text](./assets/images/Preview-2.png)
 
-- Images of working site on mobile:
-
+### Images of working site on mobile:
+![alt text](./assets/images/Mobile-View-1.jpg)
+![alt text](./assets/images/Mobile-View-2.jpg)
+![alt text](./assets/images/Mobile-View-3.jpg)
 
 ## Installation
 - N/A
