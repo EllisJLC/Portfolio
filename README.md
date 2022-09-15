@@ -30,7 +30,7 @@ To display skillset of HTML and CSS as well as ocasional JavaScript through proj
 ![alt text](./assets/images/Mobile-View-3.jpg)
 
 ## Installation
-- N/A
+The webpage was launched using Github Pages at https://ellisjlc.github.io/Portfolio/.
 
 ## Credits
 All images provided within the webpage and in the README.md were created personally by Jia Liang (Ellison) Chen.
